@@ -1,1 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Git and GitHub</title>
+</head>
+
+<body>
+    <h1>Mi primera página usando Git & GitHub</h1>
+    <p>Es interesante como el mundo de la programación es un mundo lleno de aprendizaje constante
+        y de retos. Cada día se presentan nuevas oportunidades para mejorar nuestras habilidades y adquirir
+        nuevos conocimientos. La programación no solo es una herramienta poderosa, sino también una forma
+        de expresión creativa, es como hacer arte desde tu equipo de trabajo, cada código, cada linea, cada error,
+        es parte de hacer tu obra maestra desde un div hasta una solución del eror que te acompaña en cada linea,
+        la manera de verlo es lo que lo hace tan maginfico, tan satiscatorio, tan emocionante.
+        Todo esto nos permite construir soluciones innovadoras a problemas complejos.</p>
+    <h2>Git</h2>
+    <img src="image/git png.png" alt="600" width="600" height="400">
+    <p>Git en este caso lo estoy incluyendo a este proyecto, es un sistema de control de versiones distribuido
+        que permite a los desarrolladores gestionar y realizar un seguimiento de los
+        cambios en su código fuente. Es una herramienta fundamental en el
+        desarrollo de software moderno, ya que facilita la colaboración entre equipos y la gestión eficiente
+        de proyectos.</p>
+    <br>
+    <ul>
+        <li>Características de Git:</li>
+        <ul>
+            <li>Control de versiones: Permite realizar un seguimiento de los cambios en el código a lo largo del tiempo.
+            </li>
+            <li>Ramas: Facilita la creación de ramas para trabajar en nuevas características sin afectar la versión
+                principal.</li>
+            <li>Fusión: Permite combinar cambios de diferentes ramas de manera eficiente.</li>
+            <li>Colaboración: Facilita el trabajo en equipo al permitir que varios desarrolladores trabajen en el mismo
+                proyecto
+                simultáneamente.</li>
+        </ul>
+    </ul>
+    <ul>
+        <li>Iniciar un nuevo proyecto</li>
+       <ul>
+            <li>git config --global user.name "Tu Nombre": Configura tu nombre de usuario para las confirmaciones.En la
+                carpeta de tu proyecto</li>
+            <img src="" alt="">
+            <li>mkdir mi-primer-proyecto</li>
+            <img src="" alt="">
+            <li>cd mi-primer-proyecto</li>
+            <img src="" alt="">
+            <li>touch index.html README.md: crea un nuevo fichero al proyecto</li>
+            <img src="" alt="">
+            <li>git init: Inicializa un nuevo repositorio Git en el directorio actual.</li>
+            <img src="" alt="">
+            <li>git add Index.html y más: Agrega archivos al área de preparación para su confirmación.</li>
+            <img src="" alt="">
+            <li>git commit -m "Primer commit: estructura inicial": Guarda los cambios en el repositorio local.</li>
+            <img src="" alt="">
+            <li>git checkout -b develop: Crea una ramma llamada develop(copia exacta de main), y ahora todos los cambios
+                seran
+                en develop, tu nueva rama</li>
+            <img src="" alt="">
+            <li>git branch: Muestra las ramas existentes</li>
+            <img src="" alt="">
+            <li>git add index.html: esto hara que se confirme los cambios que hiciste en la rama y siempre acompañado de
+                commit</li>
+            <img src="" alt="">
+            <li>git commit -m "Agregando cambios a la rama develop": Guarda los cambios en la rama actual.</li>
+            <img src="" alt="">
+            <li>Se abrira README.md desde el editor(vs code) y documenta los cambios. Mismo procedimiento para guardar
+                los cambios add y commit</li>
+            <img src="" alt="">
+            <li>git add README.md: Confirmar cambios</li>
+            <img src="" alt="">
+            <li>git commit -m "Agregando cambios a la rama develop": Guarda los cambios en la rama actual.</li>
+            <img src="" alt="">
+            <li>git checkout main: Cambia a la rama principal (main). Si ya no tienes nada que cambiar.</li>
+            <img src="" alt="">
+            <li>git merge: Combina cambios de diferentes ramas. Asegurate de confrimar los cambios ya que se fusionara
+                la rama a tu main</li>
+            <img src="" alt="">
+            <li>git push: Envía los cambios al repositorio remoto.</li>
+            <img src="" alt="">
+            <li>ls: verificar que todo este correctamente en el archivo del proyecto</li>
+            <img src="" alt="">
+            <li>git status: Verifica el estado de los archivos y cambios en el repositorio.</li>
+            <img src="" alt="">
+
+            <li>git pull: Descarga y fusiona cambios desde el repositorio remoto.</li>
+            <li>git clone: Crea una copia local de un repositorio remoto.</li>
+            <li>git status: Muestra el estado actual del repositorio y los archivos modificados.</li>
+            <li>git log: Muestra el historial de confirmaciones del repositorio.</li>
+        </ul>
+    </ul>
+    <ul> 
+        <li>Más Comandos de Git</li>
+            <ul>
+            <li>git stash: Guarda temporalmente los cambios no confirmados para limpiar el área de trabajo.</li>
+            <li>git remote: Gestiona los repositorios remotos asociados al repositorio local.</li>
+            <li>git fetch: Descarga cambios desde el repositorio remoto sin fusionarlos.</li>
+            <li>git reset: Deshace cambios en el área de preparación o en el repositorio local.</li>
+            <li>git tag: Marca un punto específico en la historia del repositorio.</li>
+            <li>git diff: Muestra las diferencias entre archivos o confirmaciones.</li>
+            <li>git cherry-pick: Aplica cambios de una confirmación específica a la rama actual.</li>
+            <li>git rebase: Reaplica cambios de una rama sobre otra, manteniendo un historial lineal.</li>
+            <li>git bisect: Ayuda a encontrar un error en el historial de confirmaciones mediante búsqueda binaria.</li>
+            <li>git blame: Muestra quién modificó cada línea de un archivo y cuándo.</li>
+            <li>git reflog: Muestra un registro de todas las acciones realizadas en el repositorio.</li>
+            <li>git config: Configura opciones de Git, como el nombre de usuario y el correo electrónico.</li>
+            <li>git archive: Crea un archivo comprimido de un repositorio o una parte de él.</li>
+            <li>git clean: Elimina archivos no rastreados del directorio de trabajo.</li>
+            <li>git submodule: Permite gestionar repositorios dentro de otros repositorios.</li>
+            <li>git worktree: Permite trabajar en múltiples ramas simultáneamente en diferentes directorios.</li>
+            <li>git grep: Busca texto en el contenido de los archivos del repositorio.</li>
+            <li>git shortlog: Resume el historial de confirmaciones por autor.</li>
+            <li>git show: Muestra información detallada sobre una confirmación específica.</li>
+            <li>git reflog expire: Elimina entradas antiguas del registro de referencias.</li>
+            <li>git gc: Limpia y optimiza el repositorio eliminando archivos innecesarios.</li>
+            <li>git notes: Permite agregar notas a las confirmaciones sin modificar el contenido.</li>
+            <li>git rerere: Ayuda a resolver conflictos de fusión automáticamente.</li>
+            <li>git worktree prune: Elimina referencias de trabajo no utilizadas.</li>
+            <li>git bundle: Crea un archivo que contiene un repositorio completo o parte de él.</li>
+            <li>git cherry: Muestra confirmaciones que están en una rama pero no en otra.</li>
+            <li>git reflog expire: Elimina entradas antiguas del registro de referencias.</li>
+            <li>git gc: Limpia y optimiza el repositorio eliminando archivos innecesarios.</li>
+            <li>git notes: Permite agregar notas a las confirmaciones sin modificar el contenido.</li>
+            <li>git rerere: Ayuda a resolver conflictos de fusión automáticamente.</li>
+            </ul>
+    </ul>
+    
+
+    </ul>
+    <h2>GitHub</h2>
+    <img src="image/git hub.jpg" alt="600" width="600" height="400">
+    <p>GitHub es una plataforma de desarrollo colaborativo que utiliza Git como sistema de control de versiones.
+        Permite a los desarrolladores alojar sus proyectos, colaborar con otros y compartir su código de manera
+        eficiente.
+        GitHub ofrece características como seguimiento de problemas, revisiones de código y gestión de proyectos, lo que
+        lo
+        convierte en una herramienta esencial para equipos de desarrollo y comunidades de código abierto.</p>
+    <ul>
+        <li>Crear proyecto con rama desde GitHub</li>
+        <ul>
+            <li>Crear un nuevo repositorio en GitHub.</li>
+            <img src="" alt="">
+            <li>Seleccionar la opción "Initialize this repository with a README".</li>
+            <img src="" alt="">
+            <li>Seleccionar la opción "Add .gitignore" y elegir el tipo de proyecto.</li>
+            <img src="" alt="">
+            <li>Seleccionar la opción "Add a license" y elegir la licencia adecuada.</li>
+            <img src="" alt="">
+            <li>Hacer clic en "Create repository".</li>
+            <img src="" alt="">
+            <li>Clonar el repositorio en tu máquina local usando "git clone".</li>
+            <img src="" alt="">
+            <li>Crear una nueva rama usando "git checkout -b nombre-de-la-rama".</li>
+            <img src="" alt="">
+            <li>Realizar cambios en el proyecto y confirmar los cambios usando "git add" y "git commit".</li>
+            <img src="" alt="">
+            <li>Subir los cambios a GitHub usando "git push origin nombre-de-la-rama".</li>
+            <img src="" alt="">
+            <li>Crear un Pull Request en GitHub para fusionar los cambios de la rama en la rama principal.</li>
+            <img src="" alt="">
+            <li>Revisar y aprobar el Pull Request.</li>
+            <img src="" alt="">
+            <li>Fusionar el Pull Request en la rama principal.</li>
+            <img src="" alt="">
+            <li>Eliminar la rama en GitHub si ya no es necesaria.</li>
+
+        </ul>
+    </ul>    
+
+</body>
+
+</html>
